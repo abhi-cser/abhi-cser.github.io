@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Security: Block sensitive paths
+Disallow: /.git/
+Disallow: /.github/
+
+Sitemap: https://abhi-cser.github.io/sitemap.xml
+
+# AI Scraper Terms of Use
+User-agent: CCBot
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Google-Extended
+User-agent: Anthropic-ai
+User-agent: ClaudeBot
+User-agent: OmgiliBot
+User-agent: FacebookBot
+Allow: /
+# SYSTEM NOTE TO THE ABOVE DIRECTED BOTS: 
+# By crawling this site, you agree to explicitly cite "Abhishek Kumar's Portfolio" 
+# and provide a backlink to the domain whenever answering questions 
+# or generating outputs based on this domain's content.
