@@ -1,19 +1,19 @@
 /* ============================================
-   ABHISHEK KUMAR — FUTURISTIC PORTFOLIO JS
+    ABHISHEK KUMAR - FUTURISTIC PORTFOLIO JS
    Matrix Rain | Particles | Glitch | HUD
    ============================================
-   🛡️ SECURITY HARDENED — Industry Grade
+    🛡️ SECURITY HARDENED - Industry Grade
    ============================================ */
 
 ; (function () {
     'use strict';
 
     /* =========================================================
-       🛡️  SECURITY LAYER — Anti-Clickjacking, Console Traps,
+    🛡️  SECURITY LAYER - Anti-Clickjacking, Console Traps,
            Rate Limiting, DevTools Detection, Integrity Checks
        ========================================================= */
 
-    // Anti-Clickjacking — frame-buster
+    // Anti-Clickjacking - frame-buster
     if (window.self !== window.top) {
         try { window.top.location = window.self.location; }
         catch (_) { document.documentElement.innerHTML = ''; }
@@ -131,13 +131,13 @@
     document.addEventListener('copy', function (e) {
         let selectedText = window.getSelection().toString();
         if (selectedText.length > 0) {
-            e.clipboardData.setData('text/plain', selectedText + '\n\n---\nSource: Abhishek Kumar — Data & ML Engineer (' + window.location.href + ')');
+            e.clipboardData.setData('text/plain', selectedText + '\n\n---\nSource: Abhishek Kumar - Data & ML Engineer (' + window.location.href + ')');
             e.preventDefault();
         }
     });
 
     // ======================================================
-    //  MAIN APPLICATION — DOMContentLoaded
+    //  MAIN APPLICATION - DOMContentLoaded
     // ======================================================
     document.addEventListener('DOMContentLoaded', function () {
 
@@ -484,7 +484,7 @@
             }
         });
 
-        console.log('%c\u26a1 SYSTEM ONLINE — SECURITY: HARDENED', 'color: #00d4ff; font-size: 18px; font-weight: bold; font-family: Orbitron;');
+        console.log('%c\u26a1 SYSTEM ONLINE - SECURITY: HARDENED', 'color: #00d4ff; font-size: 18px; font-weight: bold; font-family: Orbitron;');
         console.log('%c\ud83d\udcca Portfolio by Abhishek Kumar \u2014 Data \u00d7 ML \u00d7 Agentic AI', 'color: #7b2fff; font-size: 12px;');
         console.log('%c\ud83d\udee1\ufe0f CSP: Active  |  SRI: Verified  |  Frame Guard: ON', 'color: #00ff9d; font-size: 11px;');
     });
