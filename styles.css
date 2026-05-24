@@ -1803,29 +1803,21 @@ a:hover {
 }
 
 .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
     padding-bottom: 10px;
-    scroll-snap-type: x proximity;
-    scrollbar-width: none;
-}
-
-.contact-links::-webkit-scrollbar {
-    display: none;
 }
 
 .contact-card {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    padding: 32px 36px;
-    min-width: 140px;
+    padding: 24px;
+    width: 220px;
     text-decoration: none;
     color: var(--text-secondary);
     transition: all 0.4s ease;
@@ -2083,6 +2075,11 @@ a:hover {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Contact: tablet — 2 columns */
+    .contact-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -2166,6 +2163,22 @@ a:hover {
 
     .cursor-glow {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Contact: mobile — single column */
+    .contact-links {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .contact-link-card,
+    .contact-flip {
+        width: 100%;
+        min-width: auto;
+        max-width: 420px;
+        margin: 0 auto;
     }
 }
 
