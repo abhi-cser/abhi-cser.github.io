@@ -1791,7 +1791,7 @@ a:hover {
 /* ---- CONTACT ---- */
 .contact-content {
     text-align: center;
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -1804,8 +1804,9 @@ a:hover {
 
 .contact-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 220px));
     gap: 20px;
+    justify-content: center;
     justify-items: center;
     align-items: start;
     padding-bottom: 10px;
@@ -1817,7 +1818,9 @@ a:hover {
     align-items: center;
     gap: 12px;
     padding: 24px;
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
+    box-sizing: border-box;
     text-decoration: none;
     color: var(--text-secondary);
     transition: all 0.4s ease;
